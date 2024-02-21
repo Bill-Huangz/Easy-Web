@@ -2,12 +2,27 @@
 
 <head>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            font-family:'Times New Roman', Times, serif
+        }
         .title {   
             font-size: 40px;
+            text-align: center;
+            background-color: rgb(240, 240, 240);
+            
         }
         .form {
             border-style: double;
-            padding: 10px; 
+            border-width: 7px;
+            padding: 10px;
+            background-color:cyan; 
+        }
+        p {
+            font-style: italic;
+            text-align: center;
         }
     </style>
 </head>
@@ -15,21 +30,21 @@
 <body>
     <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
     <p>一個簡單的報名網站</p>
-    <div style="???">
+    <div style="display: flex; justify-content: center;">
         <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
-            <label for="fname">您的大名: </label>
-            <input type="text" name="name" id="fname"><br>
-
-
-
-            <label for="gender">您的性別: </label>
-            <select id="gender" name="gender">
-
-
-
-            </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
+        <div class="form">
+            <form style="line-height: 1.75;" action="success.html">    
+                <label for="fname">您的大名: </label>
+                <input type="text" name="name" id="fname" size="25"><br>
+                <label for="fname">出生年/月/日: </label>
+                <input type="date" name="name" id="fname"><br>
+                <label for="gender">您的性別: </label>
+                <select id="gender" name="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="notprovide">不方便提供</option>
+                </select><br>
+                <div style="display: flex; justify-content: flex-end;"><input type="submit" value="Submit"></div>
             </form>
         </div>
         <div></div>
