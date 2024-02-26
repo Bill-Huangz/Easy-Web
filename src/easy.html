@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-
 <head>
-    <style>
-        .title {   
-            font-size: 40px;
-        }
-        .form {
-            border-style: double;
-            padding: 10px; 
-        }
-    </style>
+  <link rel="stylesheet" href="easy.css" />
 </head>
-
 <body>
-    <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
-        <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
-            <label for="fname">您的大名: </label>
-            <input type="text" name="name" id="fname"><br>
+  <h1 class="title">報名網站</h1>
+  <!--background-color is rgb(240,240,240)-->
+  <p class="paraText">一個簡單的報名網站</p>
+  <div class="formBox">
+    <div></div>
+    <div class="form">
+      <form style="line-height: 1.75" action="success.html">
+        <label for="fname">您的大名: </label>
+        <input type="text" name="name" id="fname" /><br />
 
+        <label for="fdate">出生年/月/日: </label>
+        <input type="date" name="date" id="fdate" /><br />
 
-
-            <label for="gender">您的性別: </label>
-            <select id="gender" name="gender">
-
-
-
-            </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
-            </form>
+        <label for="gender">您的性別: </label>
+        <select id="gender" name="gender">
+          <option value="Male">男</option>
+          <option value="Female">女</option>
+          <option value="NotToSay">不方便透露</option></select
+        ><br />
+        <div class="submitBtn">
+          <input type="submit" value="Submit" />
         </div>
-        <div></div>
+      </form>
     </div>
+    <div></div>
+  </div>
 </body>
+
 <footer>@2024 MeiChuHackathon</footer>
