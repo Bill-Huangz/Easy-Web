@@ -4,35 +4,53 @@
     <style>
         .title {   
             font-size: 40px;
+            background-color: rgb(240,240,240);
+            text-align: center;
         }
         .form {
             border-style: double;
             padding: 10px; 
+        }
+        .content {
+            text-align: center;
+            font-style:italic;
         }
     </style>
 </head>
 
 <body>
     <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
+    <p class="content">一個簡單的報名網站</p>
+    <div style="display: flex; justify-content: center;">
         <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
+        <div class="form" style="background-color: lightcyan;"><form style="line-height: 1.75;" action="???">    
             <label for="fname">您的大名: </label>
             <input type="text" name="name" id="fname"><br>
 
-
+            <label for="date">出生年/月/日:</label>
+            <input type="date" id="date" name="date"><br>
 
             <label for="gender">您的性別: </label>
             <select id="gender" name="gender">
-
-
-
+                <option>男</option>
+                <option>女</option>
+                <option>不方便提供</option>
             </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
+            
+            <div style="text-align: right;"><input type="submit" value="Submit" id="submitbtn"></div>
             </form>
         </div>
         <div></div>
     </div>
+    <script>
+        document.getElementById("submitbtn").addEventListener("click", function(event) {
+            event.preventDefault();
+            ToSuccess();
+        });
+
+        function ToSuccess() {
+            window.location.href = "success.html";
+        }
+    </script>
 </body>
 <footer>@2024 MeiChuHackathon</footer>
