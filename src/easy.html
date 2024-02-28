@@ -2,37 +2,41 @@
 
 <head>
     <style>
-        .title {   
+        .title {
+            background-color: rgb(240,240,240);
             font-size: 40px;
         }
         .form {
+            background-color: #cbf1f0;
             border-style: double;
-            padding: 10px; 
+            padding: 10px;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
-        <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
-            <label for="fname">您的大名: </label>
-            <input type="text" name="name" id="fname"><br>
-
-
-
-            <label for="gender">您的性別: </label>
-            <select id="gender" name="gender">
-
-
-
-            </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
+    <h1 class="title center">報名網站</h1>
+    <p class="center" style="font-style: italic;">一個簡單的報名網站</p>
+    <div class="center">
+        <div class="form">
+            <form style="line-height: 1.75;" action="success.html">    
+                <label for="fname">您的大名: </label>
+                <input type="text" name="name" id="fname"><br>
+                <label for="dob">出生年/月/日: </label>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="gender">您的性別: </label>
+                <select id="gender" name="gender">
+                    <option value="man">男</option>
+                    <option value="woman">女</option>
+                    <option value="none">不方便提供</option>
+                </select><br>
+                <div style="text-align: right;"><input type="submit" value="Submit"></div>
             </form>
         </div>
-        <div></div>
     </div>
 </body>
 <footer>@2024 MeiChuHackathon</footer>
