@@ -9,30 +9,36 @@
             border-style: double;
             padding: 10px; 
         }
+        .parent {
+            display: flex;
+            justify-content: center;    
+            align-items: center;        
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
-        <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
-            <label for="fname">您的大名: </label>
-            <input type="text" name="name" id="fname"><br>
+    <h1 class="title; parent" style="background-color: rgb(240,240,240);">報名網站</h1><!--background-color is rgb(240,240,240)-->
+    <p class="parent" style="font-style: italic">一個簡單的報名網站</p>
+    <div class="parent">
+    <div></div>
+    <div class="form" style="background-color:rgb(173, 216, 230);"><form style="line-height: 1.75;" action="success.html">    
+        <label for="fname">您的大名: </label>
+        <input type="text" name="name" id="fname"><br>
 
+        <label for="birth">出生年/月/日 </label>
+        <input type="date"><br>
 
-
-            <label for="gender">您的性別: </label>
-            <select id="gender" name="gender">
-
-
-
-            </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
-            </form>
-        </div>
-        <div></div>
+        <label for="gender">您的性別: </label>
+        <select id="gender" name="gender">
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="no">不方便提供</option>
+        </select><br>
+        <div style="text-align: right"><input type="submit" value="Submit"></div>
+        </form>
+    </div>
+    <div></div>
     </div>
 </body>
-<footer>@2024 MeiChuHackathon</footer>
+<footer bottom-letf-text>@2024 MeiChuHackathon</footer>
