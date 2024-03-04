@@ -13,23 +13,25 @@
 </head>
 
 <body>
-    <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
+    <h1 class="title" style="background-color:rgb(240,240,240); text-align:center">報名網站</h1><!--background-color is rgb(240,240,240)-->
+    <p style="text-align:center"><em>一個簡單的報名網站</em></p>
+    <div style="background-color:rgba(17, 250, 250, 0.782); width:300px; margin:0 auto">
         <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
+        <div class="form"><form style="line-height: 1.75;" action="success.html" method="post">    
             <label for="fname">您的大名: </label>
             <input type="text" name="name" id="fname"><br>
 
-
+            <label for="birthday">出生年/月/日</label>
+            <input type="date" name="birthday" id="birthday"><br>
 
             <label for="gender">您的性別: </label>
             <select id="gender" name="gender">
-
-
-
+                <option value="male">男</option>
+                <option value="female">女</option>
+                <option value="not_provided">不方便提供</option>
             </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
+
+            <div style="text-align:right"><input type="submit" value="Submit"></div>
             </form>
         </div>
         <div></div>
