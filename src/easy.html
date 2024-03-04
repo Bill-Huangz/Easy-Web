@@ -4,32 +4,35 @@
     <style>
         .title {   
             font-size: 40px;
+       		text-align: center;
+      		background-color:rgb(240,240,240);
         }
         .form {
+    		background-color: #80FFFF;
             border-style: double;
-            padding: 10px; 
+            padding: 10px;
+      		width: fit-content;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="title">報名網站</h1><!--background-color is rgb(240,240,240)-->
-    <p>一個簡單的報名網站</p>
-    <div style="???">
+    <h1 class="title">報名網站</h1>
+    <p style="text-align:center;"><i>一個簡單的報名網站</i></p>
+    <div style="display:flex; justify-content:center;">
         <div></div>
-        <div class="form"><form style="line-height: 1.75;" action="???">    
+        <div class="form"><form style="line-height: 1.75;" action="success.html">    
             <label for="fname">您的大名: </label>
             <input type="text" name="name" id="fname"><br>
-
-
-
+            <label for="fname">出生年/月/日: </label>
+            <input type="date"><br>
             <label for="gender">您的性別: </label>
             <select id="gender" name="gender">
-
-
-
+				 <option>男</option>
+     			 <option>女</option>
+     			 <option>不方便提供</option>
             </select><br>
-            <div style="???"><input type="submit" value="Submit"></div>
+            <div style="text-align:right;"><input type="submit" value="Submit"></div>
             </form>
         </div>
         <div></div>
